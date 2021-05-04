@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
+
+body{
+  background-color: #c8c6c7;
+  border:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #5f863f;
+  color: white;
+  font-size: 30px;
+}
+.header>h1{
+  font-size: 40px;;
+}
+
+nav {
+  line-height: 60px;
+  background-color: #486441;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.5rem;
+}
+#logo{
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+#logo>img{
+  width: 160px;
+  height: 130px;
+}
+.ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding:0;
+  margin:0;
+}
+.ul>li{
+  float: left;
+  display: block;
+}
+.big {
+  font-size: 2.6em;
+}
+.ul>li>a{
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 15px;
+  transition: background-color 1s;
+} 
+ul>li>a:hover {
+  background-color: #fff;
+  color: #168f16;
+}
+.active {
+  border-bottom: 2px solid #168f16;
+}
+#hamburger {
+  position: absolute;
+  z-index: 4;
+  text-decoration: none;
+  font-size: 1.9em;
+  color: #c8c6c7;
+  margin: 15px 0 0 28px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+}
+.hamBtn-open{
+  transform: rotate(90deg);
+}
+.li {
+  font-size: 1.8em;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color:  #fff;
+  position: relative;
+  top: 70px;
+  left: 0;
+  text-align: center;
+}
+.li:hover{
+  color: #168f16;
+  border: 2px solid #168f16;
+}
+.sidebar{
+  height: 100vh;
+  width: 40vw;
+  position: absolute;
+  background-color: transparent;
+  top:0;
+  transition: all 0.8s ease-in-out;
+  z-index: 3;
+}
+
+.side-ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.sidepull {
+  transform: translateX(0);
+  background-color: #5f863f;
+}
+.sidepush{
+   transform: translateX(-100%);
+}
+.news-api>h3{
+  line-height: 50px;;
+  border-bottom: 2px solid #352c2f;
+}
+.news-api{
+  /* display:flex; */
+  margin:0 auto;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  width: 50%;
+}
+
+#headlines>div>a{
+  text-decoration: none;
+  justify-content: center;
+}
+#headlines,h5{
+  font-size: 1.2em;
+  color: #352c2f;
+}
+#headlines {
+  font-size: 1.05em;
+  color: #624751
+}
+.card-text{
+  text-align: justify;
+  margin-top: 80px;
+}
+.justify{
+  text-align: justify;
+}
+.box-img{
+  box-shadow: 8px 8px 6px slategray;
+}
+.box-img:hover{
+  opacity: 0.5;
+  background-color: #000;
+
+}
+.heading{
+  color:  #5f863f;
+}
+.three{
+  margin-top: 90px;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.open-button {
+  background-color: rgba(255, 17, 17, 0.74);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 220px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f5acac;
+}
+.form-container>h1{
+  color:rgb(34, 119, 31);
+}
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  box-shadow: 6px 6px 6px gray;
+}
+
+@media screen and (max-width: 768px) {
+  .navi{
+    height: 70px; 
+  }
+  .ul>li {
+    display: none;
+  }
+  #hamburger {
+     display: block; 
+  }
+  #headlines,h5{
+    font-size: 1em;
+  }
+  #headlines {
+    font-size: 0.9em;
+  }
+  img {
+    width: 270px;
+    height: 260px;
+  }
+  #logo>img{
+    width: 90px;
+    height: 60px;
+  }
+  #logo{
+    top:13%;
+  }
+  .card-text, .three{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .sidebar {
+    display: none;
+  }
+}
