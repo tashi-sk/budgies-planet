@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 body{
   background-color: #c8c6c7;
   border:0;
@@ -92,7 +92,7 @@ ul>li>a:hover {
   border: 2px solid #168f16;
 }
 .sidebar{
-  min-height: 100vh;
+  height: 100vh;
   width: 40vw;
   position: absolute;
   background-color: transparent;
@@ -176,7 +176,59 @@ ul>li>a:hover {
   right: 28px;
   width: 220px;
 }
+.title-div{
+  width:99%;
+  display: flex;
+  flex-wrap: wrap; 
+   position:absolute;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.title-div>h2{
+  color:rgb(218, 218, 218);
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 3rem;
+  
+}
+.back{
+  background-image: url('https://images.unsplash.com/photo-1619969888884-6523aa49c6ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+}
+.userInput{
+  width:90%;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+}
+.userInput>input{
+  border-radius: 10px;
+  padding: 6px;
+  outline: none;
+}
+.box{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  
+}
+.box>div{
+  font-size: 2rem;
+  font-family: "karantina",sans-serif;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
 
+.box>div>h5{
+  color: white;
+}
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -259,10 +311,20 @@ ul>li>a:hover {
     height: 60px;
   }
   #logo{
-    top:10%;
+    top:13%;
   }
   .card-text, .three{
     margin-top: 40px;
+  }
+  .box>div{
+    font-size: 1rem;
+    padding: 20px;
+  }
+  .title-div>h2{
+    font-size: 1.6rem;
+  }
+  .userInput{
+    top: 120%;
   }
 }
 
